@@ -1,5 +1,6 @@
 'use strict';
 
+
 class Car() {
     constructor(model, color, gear){
 		this.model = model;
