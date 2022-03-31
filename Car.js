@@ -1,8 +1,7 @@
 'use strict';
 
-
-class Car() {
-    constructor(model, color, gear){
+class Car {
+    constructor(model, color = 'white', gear = 0){
 		this.model = model;
 		this.color = color;
 		this.gear = gear;
@@ -16,8 +15,13 @@ class Car() {
 }
 };
 
-const car1 = new Car('tesla', 'blue')
-console.log(car1.gear);
+const car1 = new Car('tesla')
+console.log(car1);
 car1.color = 'green';
 car1.changeGear(5);
 console.log(car1.gear);
+
+/*Напишите функцию принимающую строку с именем файла и возвращающую
+расширение (фрагмент после последней точки). 
+В случае отсутствия в строке расширения - выбрасывать исключение.
+Слишком долго ищу решение, давайте дальше*/
